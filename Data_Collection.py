@@ -9,7 +9,7 @@ import os
 face_classifier = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 cap = cv2.VideoCapture(0)
 count=0
-path="C:/Users/HP/Desktop/MLOps/Face/train/Naman" # Path Where You'll save images for training of your model.
+path="C:/Users/HP/Desktop/MLOps/Face/Train/" # Path Where You'll save images for training of your model.
 def CheckFaces(sample):
     if sample is ():
         return None
@@ -40,7 +40,7 @@ print("Training Data is now collected")
 cap2 = cv2.VideoCapture(0)
 face_classifier = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
 count2=0
-path_train="C:/Users/HP/Desktop/MLOps/Face/Validation/Naman/" # Path Where You'll save images for testing of your model.
+path_train="C:/Users/HP/Desktop/MLOps/Face/Validation/" # Path Where You'll save images for testing of your model.
 def CheckFaces(sample_train):
     if sample_train is ():
         return None
